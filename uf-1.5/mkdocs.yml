@@ -1,0 +1,8 @@
+site_name: My Docs
+
+theme: readthedocs
+
+pages:
+- User Guide: 'index.md'
+- User Manager: 'user_manager.md'
+- Arc Integration: 'arc_plugin.md'
