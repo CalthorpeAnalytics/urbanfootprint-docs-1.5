@@ -3,6 +3,15 @@ site_name: UrbanFootprint 1.5
 theme: readthedocs
 
 pages:
-- User Guide: 'index.md'
+- User Guide:
+  - Introduction: 'index.md'
+  - System Requirements: 'system_requirements.md'
+  - User Interface Overview:
+    - Site Map: 'site_map.md'
+    - Layer Management Window: 'layer_management.md'
+    - Map Tool Bar: 'map_tool_bar.md'
+    - Top Section Menu Pane: 'top_section_menu_pane.md'
+    - Scenario Editor: 'scenario_editor.md'
+    - Analysis Modules: 'analysis_modules.md'
 - User Manager: 'user_manager.md'
-- Arc Integration: 'arc_plugin.md'
+- ArcGIS Integration: 'arc_plugin.md'
