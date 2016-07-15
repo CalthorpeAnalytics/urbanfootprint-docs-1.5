@@ -16,15 +16,6 @@
     <img src="images/Analytics_Logo_GreyLetters.png" alt="scag_logo" style="width: 300px;"/>
 </div>
 
-<div style="
-    justify-content: space-around;
-    display: flex;
-    margin-top: 10px;">
-    <span>
-        © 2016 Calthorpe Analytics
-    </span>
-</div>
-
 <br>
 
 # UrbanFootprint v. 1.5 - User Guide
