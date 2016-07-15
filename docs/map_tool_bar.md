@@ -1,4 +1,8 @@
-## Map Tool Bar
+## Map Navigation
+
+The user has access to a wide variety of tools to interact with the main map view of UrbanFootprint.
+
+![Map View](/images/map_view.png)
 
 Clicking on an icon on the map tool bar allows the user to zoom and navigate around the map
 as well as select and identify map features. The user can hover their pointer to get the

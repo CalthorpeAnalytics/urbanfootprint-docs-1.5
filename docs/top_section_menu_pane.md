@@ -75,6 +75,8 @@ Charts:
 
 ## Data Explorer ![Data Explorer][data_explorer]
 
+![Data Explorer](images/data_explorer_top_section.png)
+
 The data explorer query functionality and the map selector tools in UrbanFootprint are linked by default.
 When a user selects features on the map with the map selector tools, the attributes will populate
 in the query table window. If the user inputs an attribute query with no map selection, the map
