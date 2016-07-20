@@ -4,6 +4,9 @@
  - ArcMap 10.3
  - ArcMap 10.4
 
+## Download
+[Arc Toolbox Version 1.0.0](https://s3-us-west-2.amazonaws.com/uf-provisioning/urbanfootprint-arc-toolbox-v1.0.0.zip)
+
 ## Steps to Download UrbanFootprint Upload Toolbox
 1. Open ArcMap
 2. Navigate to the ArcToolbox section
