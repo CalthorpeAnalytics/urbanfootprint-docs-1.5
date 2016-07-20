@@ -14,7 +14,7 @@ To run the analysis modules and view outcomes:
 1.	Click the ‘Analysis’ tab at the far right side of the interface to expand the analysis module panel.
 2.	Select a module from the drop down menu at the top of the analysis module panel.
 3.	Click the ‘Run Module’ button.
-This step will run the selected model and output summary metrics to the analysis module panel. Depending on the model, this may take a few minutes. Mapped outcomes can then be viewed by selecting layers in the ‘Analysis Results’ section on the left side of the interface.  
+This step will run the selected model and output summary metrics to the analysis module panel. Depending on the model, this may take a few minutes. Mapped outcomes can then be viewed by selecting layers in the ‘Analysis Results’ section on the left side of the interface.
 
 
 ### Building Energy Use
@@ -22,6 +22,7 @@ This step will run the selected model and output summary metrics to the analysis
 UrbanFootprint models building energy use for all new and existing residential and commercial buildings. Scenarios vary in their building energy use profiles due to their building program, the location of new growth, and policy-based assumptions for improvements in energy efficiency. Costs and GHG emissions associated with energy use, in turn, vary according to policy-based price and emissions rate assumptions.
 
 Summary metrics include:
+
 -   Total energy use
 -   Residential energy use
 -   Commercial energy use
@@ -89,6 +90,7 @@ The GHG emissions and costs of electricity and natural gas use are calculated, i
 UrbanFootprint models residential and commercial water uses for all buildings in a base year and for future scenarios. Scenarios vary in their water use profiles due to their building program, the location of new growth, and policy-based assumptions about improvements in water efficiency over time. The costs and GHG emissions associated with water use, in turn, vary according to policy-based price and emissions rate assumptions.
 
 Summary metrics include:
+
 -   Total annual water use
 -   Annual residential water use, indoor and outdoor
 -   Annual commercial water use, indoor and outdoor
@@ -191,6 +193,7 @@ The **Standard** LDC represents the majority of separate-use auto-oriented devel
 UrbanFootprint incorporates a comprehensive ”sketch” travel model that interacts with regional travel network data to produce estimates of vehicle miles traveled (VMT) for land use + transportation scenarios. In turn, the VMT estimates are used to calculate transportation-related costs, greenhouse gas (GHG) emissions, and pollutant emissions. The core of UrbanFootprint’s travel engine was adapted from the Mixed-Use Trip Generation (MXD) model developed by Fehr & Peers for the US EPA.
 
 Summary metrics include:
+
 -   Total VMT
 -   VMT per household
 -   VMT per capita
