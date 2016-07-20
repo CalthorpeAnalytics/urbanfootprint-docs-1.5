@@ -20,10 +20,5 @@
 
 # UrbanFootprint v1.5 - User Guide
 
-<<<<<<< HEAD
 UrbanFootprint version 1.5 is a web-based, open source, scenario planning platform. This documentation covers basic functionality for scenario creation, editing, and analysis on UrbanFootprint's Scenario Planning Platform.
-=======
-UrbanFootprint is a web based, open source, scenario planning platform. This documentation
-covers basic functionality for scenario planning and editing on UrbanFootprint's Scenario
-Planning Platform.
->>>>>>> origin/master
+
