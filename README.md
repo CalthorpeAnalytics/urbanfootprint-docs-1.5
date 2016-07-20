@@ -1,4 +1,4 @@
-# UrbanFootprint v. 1.5 Documentation
+# UrbanFootprint v1.5 Documentation
 This documentation was created for the purpose of documenting UrbanFootprint's 1.5 release.
 
 ## To update documentation
