@@ -6,15 +6,20 @@ evaluate performance. Run times vary according to the complexity of the modules,
 
 The flowchart below illustrates connections among the analysis modules, which include building energy use, water use, fiscal impacts, transportation, and public health. Greenhouse gas (GHG) emissions and household cost metrics are components of building energy and transportation analysis. This guide briefly outlines the analysis module outputs and underlying methodologies.
 
+For reference, the [UrbanFootprint Technical Documentation](links/UrbanFootprint Technical Documentation-Version 1.0.pdf) offers a more detailed description of the analysis methodologies developed for version 1.0 of the model, though note that it does not reflect more recent advancements. Updated information about the public health model is available; see the [Public Health](###### Further information) section for links.
+
 ![image](images/AnalysisModules_overview.png)
 
 ### Running the Analysis Modules
 
 To run the analysis modules and view outcomes:
 1.	Click the ‘Analysis’ tab at the far right side of the interface to expand the analysis module panel.
+
 2.	Select a module from the drop down menu at the top of the analysis module panel.
+
 3.	Click the ‘Run Module’ button.
-This step will run the selected model and output summary metrics to the analysis module panel. Depending on the model, this may take a few minutes. Mapped outcomes can then be viewed by selecting layers in the ‘Analysis Results’ section on the left side of the interface.
+
+    This step will run the selected model and output summary metrics to the analysis module panel. Depending on the model, this may take a few minutes. Mapped outcomes can then be viewed by selecting layers in the ‘Analysis Results’ section on the left side of the interface.
 
 
 ### Building Energy Use
@@ -326,3 +331,9 @@ Activity and health related outputs include:
 * Proportion of CBG population that is obese (BMI 30+)  (health survey model)
 * Proportion of CBG population with a K6 mental health score indicating moderate or serious psychological distress  (health survey model)
 * Proportion of CBG population with self-reported poor general health (health survey model)
+
+###### Further information
+The following reports, prepared by Urban Design 4 Health (UD4H) and Calthorpe Analytics as part of a 2015 technical review process led by California state and regional agencies, provide detailed information about the public health model and its development:
+*  [California Public Health Assessment Model (C-PHAM): Methods, Data, and UrbanFootprint Application](link)
+
+*  [California Public Health Assessment Model: Final Data Development and Model Results](link)
