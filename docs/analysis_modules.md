@@ -6,7 +6,6 @@ evaluate performance. Run times vary according to the complexity of the modules,
 
 The flowchart below illustrates connections among the analysis modules, which include building energy use, water use, fiscal impacts, transportation, and public health. Greenhouse gas (GHG) emissions and household cost metrics are components of building energy and transportation analysis. This guide briefly outlines the analysis module outputs and underlying methodologies.
 
-For reference, the [UrbanFootprint Technical Documentation](links/UrbanFootprint Technical Documentation-Version 1.0.pdf) offers a more detailed description of the analysis methodologies developed for version 1.0 of the model, though note that it does not reflect more recent advancements. Updated information about the public health model is available; see the [Public Health](###### Further information) section for links.
 
 ![image](images/AnalysisModules_overview.png)
 
@@ -160,13 +159,13 @@ The costs of water use are calculated, in turn, on the basis of assumed retail w
 
 ### Local Fiscal Impacts
 
-Fiscal impact analysis allows users to compare the implications of varying forms of development on local expenditures and revenues. The UrbanFootprint 1.5 version of the model focuses on the impacts associated with new residential growth, accounting for the capital costs of new and upgraded local infrastructure; local operations and maintenance (O&M) costs to serve new and upgraded infrastructure; and major sources of city revenues. Cost and revenue factors – which are derived from a number of local, regional, state, and utility sources – vary by: Land Development Category (LDC: Urban, Compact or Standard); development condition (refill or greenfield); and housing type (single family detached large lot, single family detached small lot, single family attached or multifamily).
+Fiscal impact analysis allows users to compare the implications of varying forms of development on local expenditures and revenues. The UrbanFootprint 1.5 version of the model focuses on the impacts associated with new residential growth, accounting for the capital costs of new and upgraded local infrastructure; local operations and maintenance (O&M) costs to serve new and upgraded infrastructure; and major sources of city revenues.
 
 ![image](images/AM_LocalFiscal.png)
 
 #### Model Methodology
 
-Fiscal impacts are calculated on the basis of per-housing unit and per-capita cost and revenue factors that vary by UrbanFootprint land development category (LDC), refill or greenfield development condition, and housing unit type. The factors, originally developed by Strategic Economics and Calthorpe Analytics to estimate the fiscal impacts of statewide scenarios, are based on development impact fees, local general fund expenditures, housing market data, and other empirical data for representative places throughout California.
+Fiscal impacts are calculated on the basis of per-housing unit and per-capita cost and revenue factors that vary by UrbanFootprint land development category (LDC: Urban, Compact, or Standard, as described below), refill or greenfield development condition, and housing type (single family detached large lot, single family detached small lot, single family attached or multifamily). The factors, originally developed by Strategic Economics and Calthorpe Analytics to estimate the fiscal impacts of statewide scenarios, are based on development impact fees, local general fund expenditures, housing market data, and other empirical data for representative places throughout California.
 
 **Infrastructure costs**
 
@@ -334,6 +333,6 @@ Activity and health related outputs include:
 
 ###### Further information
 The following reports, prepared by Urban Design 4 Health (UD4H) and Calthorpe Analytics as part of a 2015 technical review process led by California state and regional agencies, provide detailed information about the public health model and its development:
-*  [California Public Health Assessment Model (C-PHAM): Methods, Data, and UrbanFootprint Application](link)
+*  *[California Public Health Assessment Model (C-PHAM): Methods, Data, and UrbanFootprint Application](links/UD4H_Calthorpe_CPHAM_July_2015.pdf)*
 
-*  [California Public Health Assessment Model: Final Data Development and Model Results](link)
+*  *[California Public Health Assessment Model: Final Data Development and Model Results](links/UD4H_Data_Development_Model_Results_Memo_June_2015.pdf)*
