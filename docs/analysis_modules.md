@@ -6,6 +6,7 @@ evaluate performance. Run times vary according to the complexity of the modules,
 
 The flowchart below illustrates connections among the analysis modules, which include building energy use, water use, fiscal impacts, transportation, and public health. Greenhouse gas (GHG) emissions and household cost metrics are components of building energy and transportation analysis. This guide briefly outlines the analysis module outputs and underlying methodologies.
 
+For reference, the [UrbanFootprint Technical Documentation](links/UrbanFootprint_v1.0_Technical_Documentation.pdf) offers a more detailed description of the analysis methodologies developed for version 1.0 of the model, though note that it does not reflect more recent advancements. Updated information about the public health model is available; see the [Public Health](/analysis_modules/#public-health) section for links.
 
 ![image](images/AnalysisModules_overview.png)
 
