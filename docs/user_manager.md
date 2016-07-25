@@ -74,7 +74,7 @@ given a temporary password should log in to this User Manager site and update th
 
     ![home page](images/user_manager_adding_multi_project_home_page.png)
 
-2. In the update user page, select the desired project access in the extra blank project dropdown.
+2. In the update user page, select the desired project access in the blank project dropdown.
 
     ![update multi page](images/user_manager_add_multi_project_update_user.png)
 
