@@ -334,6 +334,7 @@ Activity and health related outputs include:
 
 ###### Further information
 The following reports, prepared by Urban Design 4 Health (UD4H) and Calthorpe Analytics as part of a 2015 technical review process led by California state and regional agencies, provide detailed information about the public health model and its development:
+
 *  *[California Public Health Assessment Model (C-PHAM): Methods, Data, and UrbanFootprint Application](links/UD4H_Calthorpe_CPHAM_July_2015.pdf)*
 
 *  *[California Public Health Assessment Model: Final Data Development and Model Results](links/UD4H_Data_Development_Model_Results_Memo_June_2015.pdf)*
