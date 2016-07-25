@@ -7,6 +7,7 @@ In this section you will find:
 * How to update your profile
 * How to create a new user
 * How to update a user's profile
+* How to update a user with access to multiple projects
 
 The user manager can be accessed from the user profile dropdown 'Manage Users' in the right hand corner of UrbanFootprint.
 
@@ -42,6 +43,9 @@ expand the drop down list and select 'Add User'.
 
 3. The form contains the following fields:
     1. Project - This property associates the user to a municipality (or administrative group).
+
+        >**Note:** to create a user with access to multiple projects, see [How to update a user with access to multiple projects](/user_manager/#how-to-update-a-user-with-access-to-multiple-projects)
+
     2. Role - The role the user fulfills e.g.: 'Admin' or 'User'
     3. Name - This field is optional.
     4. Email - The email address of the user to be created; it must not already be used for another UrbanFootprint account.
@@ -64,3 +68,18 @@ click on that user's row.
     1. New Password and Confirm New Password - These fields are optional and should be set if the user needs to have their password reset. _Users who are
 given a temporary password should log in to this User Manager site and update their password_.
 
+## How to update a user with access to multiple projects
+
+1. Administrative and manager users have the ability to update the profiles of users they manage. Updating a user with access to multiple projects can be done one project at a time. In the User Management home page, select the user to update.
+
+    ![home page](images/user_manager_adding_multi_project_home_page.png)
+
+2. In the update user page, select the desired project access in the extra blank project dropdown.
+
+    ![update multi page](images/user_manager_add_multi_project_update_user.png)
+
+3. Click save to add project access to the user.
+
+    ![update multi projects save](images/user_manager_add_multi_project_save.png)
+
+4. To add access to another project to the same user, repeat steps 1-3.
