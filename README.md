@@ -1,5 +1,6 @@
 # UrbanFootprint v1.5 Documentation
-This documentation was created for the purpose of documenting UrbanFootprint's 1.5 release.
+
+**This is the source repository for the documentation hosted at [http://urbanfootprint-v1.readthedocs.io/](http://urbanfootprint-v1.readthedocs.io/)**
 
 ## To update documentation
 
