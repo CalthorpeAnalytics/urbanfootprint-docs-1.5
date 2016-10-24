@@ -94,15 +94,12 @@ Some of the other analytical modules also require climate data to run.
 | Bike network (if available) | Regional COG/MPO or Transport District | |
 | Sidewalks (if available) | Regional COG/MPO or Transport District | |
 
-Analysis Reference Data
-_______________________
+### Analysis Reference Data
 
-.. csv-table:: **Analysis Reference Data**
-  :header: Data Type, Potential Source, Notes
-  :widths: 50, 50, 50
-  :file: OtherDocs/analysisreference.csv
-
-
+| Data Type | Potential Source | Notes |
+|-----------|------------------|-------|
+| Climate Zones (for energy modeling) | | |
+| Evapotranspiration Zones (for outdoor water modeling) | | |
 
 Base Data Schema: SACOG
 -----------------------
