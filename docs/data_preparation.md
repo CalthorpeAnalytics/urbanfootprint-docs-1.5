@@ -101,8 +101,7 @@ Some of the other analytical modules also require climate data to run.
 | Climate Zones (for energy modeling) | | |
 | Evapotranspiration Zones (for outdoor water modeling) | | |
 
-Base Data Schema: SACOG
------------------------
+## Base Data Schema: SACOG
 
 * The structure and field names are critical.
 * There is a single table
@@ -117,13 +116,17 @@ Base Data Schema: SACOG
  * Building Square footage
  * Outdoor Irrigated Area
 
-Metadata and Geography
-______________________
+### Metadata and Geography
 
-.. csv-table:: **Metadata and Geography**
-  :header: Field Name, Description
-  :widths: 25, 75
-  :file: OtherDocs/metadatageog.csv
+| Field Name | Description |
+|------------|-------------|
+|id | UF unique id |
+|geography_id | original geometry id (from SACOG) |
+|wkb_geometry | PostGreSQL geometry field (will not be visible in ArcGIS) |
+|region_lu_code | SACOG land use code |
+|built_form_key | identifier (name of) for building  type or place type key |
+|created | date of data creation/import into UF system |
+|updated | date of data change or modifiction within UF system |
 
 Paint Configuration
 ___________________
