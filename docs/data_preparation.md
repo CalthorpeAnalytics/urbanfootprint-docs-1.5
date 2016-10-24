@@ -1,16 +1,13 @@
-Data Preparation
-================
+# Data Preparation
 
-Goals
------
+## Goals
 
 * Provide an overview of data needed by UrbanFootprint
 * Describe the required fields for base data
 * Walk through the steps used for SACOG’s base data preparation.
 * Work through an example of preparing data for a county.
 
-Data Needs
-----------
+## Data Needs
 
 UrbanFootprint is a data intensive application. The effort that goes into data collection, preparation, and review should not be underestimated.
 
@@ -27,11 +24,9 @@ The transportation module (and any other modules that build on its results) will
 Some of the other analytical modules also require climate data to run.
 
 
-Data Types and Sources
-----------------------
+## Data Types and Sources
 
-Data for the Base Canvas
-________________________
+### Data for the Base Canvas
 
 | Data Type | Potential Source | Notes |
 |-----------|------------------|-------|
@@ -44,16 +39,20 @@ ________________________
 | Parcel level Building Square Footage Data (even limited sample) | Tax Assessor, Local Jurisdiction, Regional COG/MPO | Used to calibrate building square footage estimates |
 | Any aggreggate geography to be used as the unit of analysis (other than parcel) | Regional COG/MPO | |
 
-Data for Scenario Development
-_____________________________
+### Data for Scenario Development
 
-.. csv-table:: **Scenario Development**
-  :header: Data Type, Potential Source, Notes
-  :widths: 50, 50, 50
-  :file: OtherDocs/scenariodevelopment.csv
+| Data Type | Potential Source | Notes |
+|-----------|------------------|-------|
+| Priority Development Areas | Regional COG/MPO or Local Jurisdiction | |
+| Redevelopment Analysis Geographies | Regional COG/MPO or Local Jurisdiction | |
+| Planned Development (in the pipeline) locations and attributes | Regional COG/MPO or Local Jurisdiction | |
+| Transit Priority Zones | Regional COG/MPO or Local Jurisdiction | |
+| General Plan Parcels and attributes | Regional COG/MPO or Local Jurisdiction | |
+| Any existing RTP/SCS scenarios - geographies and attributes | Regional COG/MPO or Local Jurisdiction | |
+| Any other existing scenarios - geographies and attributes | Regional COG/MPO or Local Jurisdiction | |
+| Any other geography used to inform policy on distribution of growth | Regional COG/MPO or Local Jurisdiction | |
 
-Environmental Constraints
-_________________________
+### Environmental Constraints
 
 .. csv-table:: **Environmental Constraints/Climate Resilience**
   :header: Data Type, Potential Source, Notes
