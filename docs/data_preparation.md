@@ -128,15 +128,18 @@ Some of the other analytical modules also require climate data to run.
 |created | date of data creation/import into UF system |
 |updated | date of data change or modifiction within UF system |
 
-Paint Configuration
-___________________
+### Paint Configuration
 
 These fields are not used in the base features dataset, but are included to maintain an identical structure to the End State data.
 
-.. csv-table:: **Paint Configuration**
-  :header: Field Name, Description
-  :widths: 25, 75
-  :file: OtherDocs/paintconfig.csv
+| Field Name | Description |
+|------------|-------------|
+| dev_pct | development percent - proportion of geography receiving building type or place type application |
+| density_pct density percent | proportional intensity of building type or place type application |
+| gross_net_pct gross-to-net percent | proportion of developed acreage that receives building type or place type application |
+| clear_base_flag | boolean field to indicate clearance of development program (removal of all base year dwelling units and employees) |
+| redevelopment_flag | boolean field to indicate/track redevelopment on geography |
+| dirty_flag | used internally by UF during paint application |
 
 
 Parcel Area/Type
