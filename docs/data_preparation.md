@@ -80,13 +80,19 @@ Some of the other analytical modules also require climate data to run.
 | Military Areas | Census TIGER or Regional COG/MPO | |
 | Open Space/Conservation Lands | Regional COG/MPO or Local Jurisdiction | |
 
-Transportation Data
-___________________
+### Transportation Data
 
-.. csv-table:: **Transportation**
-  :header: Data Type, Potential Source, Notes
-  :widths: 50, 50, 50
-  :file: OtherDocs/transportation.csv
+| Data Type | Potential Source | Notes |
+|-----------|------------------|-------|
+| Transit stops (fixed guideway and others as available) | Regional COG/MPO or Transport District | |
+| Skim Matrices for each horzon year/policy scenario | Regional MPO or Transportation Modeling Consultants | |
+| Transportation network | Regional COG/MPO or Transport District | |
+| Road Network (Freeways, major roads, secondary roads) | Regional COG/MPO or Transport District | |
+| Street Intersection Points | Regional COG/MPO or Transport District | |
+| Railroads: light rail, commuter rail, and selected freight rail | Regional COG/MPO or Transport District | |
+| TAZ geography(s) | Regional COG/MPO or Transport District | |
+| Bike network (if available) | Regional COG/MPO or Transport District | |
+| Sidewalks (if available) | Regional COG/MPO or Transport District | |
 
 Analysis Reference Data
 _______________________
