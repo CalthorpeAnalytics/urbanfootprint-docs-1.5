@@ -65,13 +65,20 @@ Some of the other analytical modules also require climate data to run.
 | Sea Level Rise Zones  |  | |
 | Parks/Protected lands | CPAD Holdings | |
 
-Base Reference Layers
-_____________________
+### Base Reference Layers
 
-.. csv-table:: **Reference Layers**
-  :header: Data Type, Potential Source, Notes
-  :widths: 50, 50, 50
-  :file: OtherDocs/referencedata.csv
+| Data Type | Potential Source | Notes |
+|-----------|------------------|-------|
+| County boundary(s) | Census TIGER | |
+| Jurisdiction Boundaries | Local Jurisdiction | |
+| Jurisdiction Sphere of Influence Boundaries | Regional COG/MPO or Local Jurisdiction | |
+| Regional Sub-Area Geographies | Regional COG/MPO | |
+| School/College/Universities | Regional COG/MPO, Local Jurisdiction, or Census TIGER" | |
+| Health Care Facilities | Regional COG/MPO, Local Jurisdiction, or Census TIGER | |
+| Public/Institutional parcels | Tax Assessor, Local Jurisdiction, Regional COG/MPO | |
+| Indian Reservations/Tribal Areas | Census TIGER or Regional COG/MPO | |
+| Military Areas | Census TIGER or Regional COG/MPO | |
+| Open Space/Conservation Lands | Regional COG/MPO or Local Jurisdiction | |
 
 Transportation Data
 ___________________
