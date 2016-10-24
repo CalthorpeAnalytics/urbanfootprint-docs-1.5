@@ -33,10 +33,16 @@ Data Types and Sources
 Data for the Base Canvas
 ________________________
 
-.. csv-table:: **Base Canvas**
-  :header: Data Type, Potential Source, Notes
-  :widths: 50, 50, 50
-  :file: OtherDocs/basecanvas.csv
+| Data Type | Potential Source | Notes |
+|-----------|------------------|-------|
+| Cadastral/tax parcel geograpies | Tax Assessor Local Jurisdiction Regional COG/MPO |  |
+| Existing land use (parcel land use codes | Tax Assessor, Local Jurisdiction, Regional COG/MPO | |
+| Existing employment (2 or 4 digit NAICS codes) | Census LEHD, State or Regional COG/MPO | |
+| Dwelling Units by type (parcel scale) | Tax Assessor, Local Jurisdiction, Regional COG/MPO | Parcel scale dwelling unit counts are acceptable, ideally data is provided as Single Family/MultiFamily counts |
+| Population/households | Census ACS 5-Year / Other (population synthesizer etc.) | |
+| Populating Age Characteristics/Educational Attainment/Household Income ranges/Race-Ethnicity/Vehicle Ownership | Census ACS 5-Year / Other (population synthesizer etc.) | |
+| Parcel level Building Square Footage Data (even limited sample) | Tax Assessor, Local Jurisdiction, Regional COG/MPO | Used to calibrate building square footage estimates |
+| Any aggreggate geography to be used as the unit of analysis (other than parcel) | Regional COG/MPO | |
 
 Data for Scenario Development
 _____________________________
