@@ -54,10 +54,16 @@ Some of the other analytical modules also require climate data to run.
 
 ### Environmental Constraints
 
-.. csv-table:: **Environmental Constraints/Climate Resilience**
-  :header: Data Type, Potential Source, Notes
-  :widths: 50, 50, 50
-  :file: OtherDocs/environmentalconstraints.csv
+| Data Type | Potential Source | Notes |
+|-----------|------------------|-------|
+| Streams/Rivers | Regional COG/MPO  | |
+| Wetlands | National Wetlands Inventory | |
+| Vernal Pools | National Wetlands Inventory | |
+| Priority Conservation Lands | Regional COG/MPO or Local Jurisdiction | |
+| Slope/Digital Elevation Model (DEM) | USGS or Regional COG/MPO | |
+| Flood Zones | FEMA or Regional COG/MPO | |
+| Sea Level Rise Zones  |  | |
+| Parks/Protected lands | CPAD Holdings | |
 
 Base Reference Layers
 _____________________
