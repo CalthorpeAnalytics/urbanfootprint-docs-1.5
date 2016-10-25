@@ -181,13 +181,32 @@ These fields are not used in the base features dataset, but are included to main
 | du_mf2to4 | units in multifamily buildings with 2 to 4 dwelling units |
 | du_mf5p | units in multifamily buildings with 5 or more dwelling units |
 
-Employment
-__________
+### Employment
 
-.. csv-table:: **Employment**
-  :header: Field Name, Description
-  :widths: 25, 75
-  :file: OtherDocs/employment.csv
+| Field Name | Description |
+|------------|-------------|
+| emp | number of employees |
+| emp_ret | number of retail employees |
+| emp_retail_services | number of retail services employees |
+| emp_restaurant | number of restaurant employees |
+| emp_accommodation | number of accommodation employees |
+| emp_arts_entertainment | number of arts and entertainment employees |
+| emp_other_services | number of other services employees |
+| emp_off | number of office employees |
+| emp_office_services | number of office services employees |
+| emp_public_admin | number of public administration employees |
+| emp_education | number of education employees |
+| emp_medical_services | number of medical services employees |
+| emp_ind | number of industrial employees |
+| emp_manufacturing | number of manufacturing employees |
+| emp_wholesale | number of wholesale employees |
+| emp_transport_warehousing | number of transportation and warehousing employees |
+| emp_utilities | number of utilities employees |
+| emp_construction | number of construction employees |
+| emp_ag | number of agricultural/extration employees |
+| emp_agriculture | number of agricultural employees |
+| emp_extraction | number of extraction employees |
+| emp_military | number of military employees |
 
 Building Square Footage
 _______________________
