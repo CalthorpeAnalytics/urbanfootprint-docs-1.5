@@ -15,6 +15,7 @@ pages:
     - 5. Analysis Modules: 'analysis_modules.md'
 - User Manager: 'user_manager.md'
 - ArcGIS Integration: 'arc_plugin.md'
+- Base Data Preparation: 'data_preparation.md'
 - User Support: 'user_support.md'
 
 copyright: © 2016 Calthorpe Analytics
