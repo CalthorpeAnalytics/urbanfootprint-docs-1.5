@@ -228,13 +228,12 @@ These fields are not used in the base features dataset, but are included to main
 | bldg_sqft_transport_warehousing | building square footage of transportation and warehousing |
 | bldg_sqft_wholesale | building square footage of wholesale |
 
-Outdoor Irrigated Area
-______________________
+### Outdoor Irrigated Area
 
-.. csv-table:: **Outdoor Irrigated Area**
-  :header: Field Name, Description
-  :widths: 25, 75
-  :file: OtherDocs/irrigated.csv
+| Field Name | Description |
+|------------|-------------|
+| residential_irrigated_sqft | residential outdoor irrigated square feet |
+| commercial_irrigated_sqft | commercial outdoor irrigated square feet |
 
 Base Data Preparation: SACOG
 ----------------------------
