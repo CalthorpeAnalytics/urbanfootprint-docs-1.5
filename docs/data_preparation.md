@@ -252,8 +252,7 @@ These fields are not used in the base features dataset, but are included to main
 * Clip the dataset to the county border
 * Remove roads and waterbodies
 
-Dwelling Units
-______________
+### Dwelling Units
 
 | SACOG Use Code | Dwelling Unit Type |
 |----------------|--------------------|
@@ -273,35 +272,38 @@ ______________
 * Du_detsf_sl and du_detsf_ll based on sf/du calculation.
 * ACS rates for Attached SF, MF 2-4, and MF 5 plus are applied to all parcels with MF units
 
-Households
-__________
-
-.. image:: graphics/ExistingConditions_smalll.png
-  :width: 300 px
+### Households
 
 * HH from SACOG 2008
 * DU from Parcel Data
 * Occupancy rate = HH/DU
 
-Population
-__________
+### Population
 
 * Calculate Average HH by block group from census data
 * Ave. HH size = pop/hh
 * Then multiply the HH count in each parcel by the Ave. HH size.
 
-Employment
-__________
+### Employment
 
 * Parcel employment from SACOG 2008
 * Crosswalk using the table
 * Use LEHD to disaggregate where needed. (next page)
 * Accommodation extracted using SACOG Employment Inventory
 
-.. csv-table:: **Employment Land Use Crosswalk**
-  :header: SACOG Use Code, Employment Type
-  :widths: 25, 75
-  :file: OtherDocs/emp_crosswalk.csv
+**Employment Land Use Crosswalk**
+
+| SACOG Category | UrbanFootprint Employment Category |
+|----------------|------------------------------------|
+| EmpGov | Emp_Public_admin |
+| EmpOfc | Emp_Office_services |
+| EmpMed | Emp_Medical_services |
+| EmpEdu | Emp_Education |
+| EmpRet | Emp_Retail_services |
+| EmpFood | Emp_Restaurant |
+| EmpSvc | Emp_Entrec, Emp_Othe_services, Emp_Accomodation |
+| EmpInd | Emp_Utilities, Emp_Transware, Emp_Warehouse, Emp_Wholesale, Emp_Construction, Emp_Manufacturing, Emp_Agriculture, Emp_Extract |
+| EmpOth | Emp_military |
 
 Employment Processing and Source
 ________________________________
