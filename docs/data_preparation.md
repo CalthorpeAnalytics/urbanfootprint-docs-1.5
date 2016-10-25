@@ -235,31 +235,18 @@ These fields are not used in the base features dataset, but are included to main
 | residential_irrigated_sqft | residential outdoor irrigated square feet |
 | commercial_irrigated_sqft | commercial outdoor irrigated square feet |
 
-Base Data Preparation: SACOG
-----------------------------
+## Base Data Preparation: SACOG
 
-Input Data
-__________
-
-.. image:: graphics/GenericPic1.png
-  :align: right
-  :width: 300 px
+#### Input Data
 
 * SACOG parcel data
-
- * SACOG Land Use
- * Dwelling Units
-
+    * SACOG Land Use
+    * Dwelling Units
 * SACOG TAZ
-* Census 2010 Blockgroups
-* Census 2010 Tracts
+    * Census 2010 Blockgroups
+    * Census 2010 Tracts
 
-Data Preparation: Topology
-__________________________
-
-.. image:: graphics/ExistingConditions_smalll.png
-  :align: left
-  :width: 300 px
+### Data Preparation: Topology
 
 * Parcels must not overlap
 * Clip the dataset to the county border
@@ -268,10 +255,17 @@ __________________________
 Dwelling Units
 ______________
 
-.. csv-table:: **Residential Land Use Crosswalk**
-  :header: SACOG Use Code, Dwelling Unit Type
-  :widths: 25, 75
-  :file: OtherDocs/lu_crosswalk.csv
+| SACOG Use Code | Dwelling Unit Type |
+|----------------|--------------------|
+| Rural Residential | Single Family |
+| Farm Home | Single Family |
+| Very Low Density Res. | Single Family |
+| Low Density Res. | Single Family |
+| Large Lot Not Farm Home | Single Family |
+| Medium Density Res. | Multifamily |
+| Medium-High Density Res. | Multifamily |
+| High Density Res | Multifamily |
+| Urban Residential | Multifamily |
 
 * Total DU = SACOG Parcel DU
 * Controlled to TAZ totals
@@ -356,40 +350,7 @@ _____________
 
 Need info
 
-Alternate Method: SANDAG
-------------------------
-
-* Base Schema
-
- * Expanded compared to SACOG
- * Includes HH income
- * Population Educational Attainment
-
-* Data Sources
-
- * 2012 parcels, have DU and land use
- * 2012 EDD employment points with 2-4 digit NAICS codes
- * MGRA with Pop (by gender and age), and Households by income category
- * ACS Data (5 year block group and 1 year PUMS)
-
-Loading Base Data into UrbanFootprint
--------------------------------------
-
-#. Upload via ftp
-#. Create new geographic area in Django
-#. Create new schema in database
-#. Load data to schema
-
-Keep the Goal in Mind
----------------------
+### Keep the Goal in Mind
 
 * Data for your region will be unique
 * This process should serve as a starting point for developing your data, not a fixed recipe.
-
-Exercise
---------
-
-* Download XXXX
-* And unzip it into a folder.
-* Inside the folder here will be a mxd and folders with data and scripts
-* We’re going to step through the scripts.
