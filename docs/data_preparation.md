@@ -305,13 +305,30 @@ These fields are not used in the base features dataset, but are included to main
 | EmpInd | Emp_Utilities, Emp_Transware, Emp_Warehouse, Emp_Wholesale, Emp_Construction, Emp_Manufacturing, Emp_Agriculture, Emp_Extract |
 | EmpOth | Emp_military |
 
-Employment Processing and Source
-________________________________
+### Employment Processing and Source
 
-.. csv-table:: **Employment Processing and Source**
-  :header: UF Employment Sub Category, Method for Spatially Deriving Field at Parcel, SACSIM Category
-  :widths: 25, 75, 75
-  :file: OtherDocs/emp_processing.csv
+**Employment Processing and Source**
+
+| UF Employment Sub Category | Method for Spatially Deriving Field at Parcel | SACSIM Category |
+|----------------------------|-----------------------------------------------|-----------------|
+| Emp_Public |  ,Direct Crosswalk from SACSIM Category | EmpGov |
+| Emp_Office | Direct Crosswalk from SACSIM Category | EmpOfc |
+| Emp_Medss | Direct Crosswalk from SACSIM Category | EmpMed |
+| Emp_Educ | Direct Crosswalk from SACSIM Category | EmpEdu |
+| Emp_Retail | Direct Crosswalk from SACSIM Category | EmpRet |
+| Emp_Restaurant | Direct Crosswalk from SACSIM Category | EmpFood |
+| Emp_Entrec | LEHD 2010 Near Imputed Rate (Block) | EmpSvc |
+| Emp_Other | LEHD 2010 Near Imputed Rate (Block) | EmpSvc |
+| Emp_Accommodation | SACOG Employment Inventory | EmpSvc |
+| Emp_Transware | LEHD 2010 Near Imputed Rate (Block) | EmpInd |
+| Emp_Warehouse | LEHD 2010 Near Imputed Rate (Block) | EmpInd |
+| Emp_Whole | LEHD 2010 Near Imputed Rate (Block) | EmpInd |
+| Emp_Constr | LEHD 2010 Near Imputed Rate (Block) | EmpInd |
+| Emp_Manuf | LEHD 2010 Near Imputed Rate (Block) | EmpInd |
+| Emp_Agriculture | LEHD 2010 Near Imputed Rate (Block) | EmpInd |
+| Emp_Extract | LEHD 2010 Near Imputed Rate (Block) | EmpInd |
+| Emp_AF | Direct Crosswalk from SACSIM Category | EmpOth |
+
 
 Disaggregation
 ______________
