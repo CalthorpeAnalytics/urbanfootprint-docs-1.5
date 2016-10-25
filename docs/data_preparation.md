@@ -208,13 +208,25 @@ These fields are not used in the base features dataset, but are included to main
 | emp_extraction | number of extraction employees |
 | emp_military | number of military employees |
 
-Building Square Footage
-_______________________
+### Building Square Footage
 
-.. csv-table:: **Building Square Footage**
-  :header: Field Name, Description
-  :widths: 25, 75
-  :file: OtherDocs/buildinginfo.csv
+| Field Name | Description |
+|------------|-------------|
+| bldg_sqft_detsf_sl | building square footage of detached single family small lot homes |
+| bldg_sqft_detsf_ll | building square footage of detached single family large lot homes |
+| bldg_sqft_attsf | building square footage of attached single family homes/townhomes |
+| bldg_sqft_mf | building square footage of multifamily units |
+| bldg_sqft_retail_services | building square footage of retail services  |
+| bldg_sqft_restaurant | building square footage of restaurants |
+| bldg_sqft_accommodation | building square footage of accommodation |
+| bldg_sqft_arts_entertainment | building square footage of arts and entertainment |
+| bldg_sqft_other_services | building square footage of other services |
+| bldg_sqft_office_services | building square footage of office services |
+| bldg_sqft_public_admin | building square footage of public administration |
+| bldg_sqft_education | building square footage of education |
+| bldg_sqft_medical_services | building square footage of medical services |
+| bldg_sqft_transport_warehousing | building square footage of transportation and warehousing |
+| bldg_sqft_wholesale | building square footage of wholesale |
 
 Outdoor Irrigated Area
 ______________________
