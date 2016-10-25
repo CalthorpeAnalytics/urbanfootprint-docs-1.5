@@ -11,6 +11,16 @@
 
 UrbanFootprint is a data intensive application. The effort that goes into data collection, preparation, and review should not be underestimated.
 
+### Sample Data Set
+
+A sample dataset of Elk Grove, CA is available and is included in the [README-developers.md](https://github.com/CalthorpeAnalytics/urbanfootprint/blob/master/README-developers.md)
+and [README-developers-windows.md](https://github.com/CalthorpeAnalytics/urbanfootprint/blob/master/README-developers-windows.md)
+instructions in the [UrbanFootprint](https://github.com/CalthorpeAnalytics/urbanfootprint) repo.
+
+If you would like to use your own data, please see the below.
+
+### Creating a New Data Set
+
 The base data which is also called the base canvas, or existing conditions dataset will require extensive data collection, processing, and then review prior to its use. The requirements imposed by UrbanFootprint on its base conditions data include strict adherence to the data schema, and the need for a detailed understanding of the existing conditions at a parcel level. If you are working in a geographic area that has not had a prior installation of UrbanFootprint, it is unlikely that there will be a dataset that you can use without substantial effort in createing a base condition dataset.
 
 Scenario development has looser data requirements, but will require that you have an understanding of regional and local plans for the future, and have planned out goals for the scenario that can be translated onto a map at a parcel scale.
@@ -22,7 +32,6 @@ Reference layers provide a visual reference to UrbanFootprint users while editin
 The transportation module (and any other modules that build on its results) will require that you have substantial additional data derived from both regional transportation infrastructure GIS as well as a travel demand model.
 
 Some of the other analytical modules also require climate data to run.
-
 
 ## Data Types and Sources
 
@@ -330,44 +339,120 @@ These fields are not used in the base features dataset, but are included to main
 | Emp_AF | Direct Crosswalk from SACSIM Category | EmpOth |
 
 
-Disaggregation
-______________
+### Disaggregation
 
 * This technique is used several times during data preparation.
 * Calculate the proportion of each SACOG category that goes into each UF Employment Category.
 * Use the LEHD 2010 near imputed rate datase as the basis for the disaggregation.
 
-i.e. %emp_entrec = 100*emp_entrec/
-(emp_entrec+emp_other_services+emp_accomodation)
-
+```
+i.e. %emp_entrec = 100 * emp_entrec / (emp_entrec + emp_other_services + emp_accomodation)
+```
 
 Dataset 1 (higher accuracy): 95 employees
 
 Dataset 2: 50 retail, 30 service, and 20 industrial employees.
 
-+---------+------+------+------+------+------+-----+
-|Total Emp|Ret. %|Ser. %|Ind. %|# Ret.|# Ser.|# Ind|
-+=========+======+======+======+======+======+=====+
-|95       |50  |30  |20    |47.5  |28.5  |19   |
-+---------+------+------+------+------+------+-----+
+| Total Emp | Ret. % | Ser. % | Ind. % | # Ret. | # Ser. | # Ind |
+|-----------|--------|--------|--------|--------|--------|-------|
+|        95 |     50 |     30 |     20 |   47.5 |   28.5 |    19 |
 
+## Base Canvas Schema
 
-Concerns: Zeros and Nulls
+Make a postgres database with a **base_canvas** table with the following columns (it may be easiest to start with the sample base database provided in the [UrbanFootprint repo](https://github.com/CalthorpeAnalytics/urbanfootprint/)).
 
-Building Square Footage
-_______________________
+        psql -U postgres -c "CREATE DATABASE urbanfootprint_source;"
+        psql -U postgres urbanfootprint_source;"
 
-Need info
+        urbanfootprint_source=# \d+ base_canvas
+                                               Table "public.base_canvas"
 
-Irrigated Square Footage
-________________________
-
-Need info
-
-Developablity
-_____________
-
-Need info
+                     Column              |           Type           | Modifiers | Storage  | Stats target | Description
+        ---------------------------------+--------------------------+-----------+----------+--------------+-------------
+         geography_id                    | integer                  |           | plain    |              |
+         source_id                       | character varying        |           | extended |              |
+         wkb_geometry                    | geometry                 |           | main     |              |
+         region_lu_code                  | character varying(200)   |           | extended |              |
+         built_form_key                  | character varying(200)   |           | extended |              |
+         land_development_category       | character varying(50)    |           | extended |              |
+         acres_developable               | numeric(14,4)            |           | main     |              |
+         developable_proportion          | numeric(8,4)             |           | main     |              |
+         sqft_parcel                     | numeric(14,4)            |           | main     |              |
+         acres_gross                     | numeric(14,4)            |           | main     |              |
+         acres_parcel                    | numeric(14,4)            |           | main     |              |
+         acres_parcel_res                | numeric(14,4)            |           | main     |              |
+         acres_parcel_emp                | numeric(14,4)            |           | main     |              |
+         acres_parcel_mixed_use          | numeric(14,4)            |           | main     |              |
+         acres_parcel_no_use             | numeric(14,4)            |           | main     |              |
+         intersection_density_sqmi       | numeric(14,1)            |           | main     |              |
+         pop                             | numeric(14,1)            |           | main     |              |
+         hh                              | numeric(14,1)            |           | main     |              |
+         du                              | numeric(14,1)            |           | main     |              |
+         du_detsf                        | numeric(14,1)            |           | main     |              |
+         du_attsf                        | numeric(14,1)            |           | main     |              |
+         du_mf                           | numeric(14,1)            |           | main     |              |
+         emp                             | numeric(14,1)            |           | main     |              |
+         emp_ret                         | numeric(14,1)            |           | main     |              |
+         emp_off                         | numeric(14,1)            |           | main     |              |
+         emp_pub                         | numeric(14,1)            |           | main     |              |
+         emp_ind                         | numeric(14,1)            |           | main     |              |
+         emp_ag                          | numeric(14,1)            |           | main     |              |
+         emp_military                    | numeric(14,1)            |           | main     |              |
+         du_detsf_ll                     | numeric(14,1)            |           | main     |              |
+         du_detsf_sl                     | numeric(14,1)            |           | main     |              |
+         du_mf2to4                       | numeric(14,1)            |           | main     |              |
+         du_mf5p                         | numeric(14,1)            |           | main     |              |
+         emp_retail_services             | numeric(14,1)            |           | main     |              |
+         emp_restaurant                  | numeric(14,1)            |           | main     |              |
+         emp_accommodation               | numeric(14,1)            |           | main     |              |
+         emp_arts_entertainment          | numeric(14,1)            |           | main     |              |
+         emp_other_services              | numeric(14,1)            |           | main     |              |
+         emp_office_services             | numeric(14,1)            |           | main     |              |
+         emp_public_admin                | numeric(14,1)            |           | main     |              |
+         emp_education                   | numeric(14,1)            |           | main     |              |
+         emp_medical_services            | numeric(14,1)            |           | main     |              |
+         emp_manufacturing               | numeric(14,1)            |           | main     |              |
+         emp_wholesale                   | numeric(14,1)            |           | main     |              |
+         emp_transport_warehousing       | numeric(14,1)            |           | main     |              |
+         emp_utilities                   | numeric(14,1)            |           | main     |              |
+         emp_construction                | numeric(14,1)            |           | main     |              |
+         emp_agriculture                 | numeric(14,1)            |           | main     |              |
+         emp_extraction                  | numeric(14,1)            |           | main     |              |
+         bldg_sqft_detsf_sl              | numeric(14,1)            |           | main     |              |
+         bldg_sqft_detsf_ll              | numeric(14,1)            |           | main     |              |
+         bldg_sqft_attsf                 | numeric(14,1)            |           | main     |              |
+         bldg_sqft_mf                    | numeric(14,1)            |           | main     |              |
+         bldg_sqft_retail_services       | numeric(14,1)            |           | main     |              |
+         bldg_sqft_restaurant            | numeric(14,1)            |           | main     |              |
+         bldg_sqft_accommodation         | numeric(14,1)            |           | main     |              |
+         bldg_sqft_arts_entertainment    | numeric(14,1)            |           | main     |              |
+         bldg_sqft_other_services        | numeric(14,1)            |           | main     |              |
+         bldg_sqft_office_services       | numeric(14,1)            |           | main     |              |
+         bldg_sqft_public_admin          | numeric(14,1)            |           | main     |              |
+         bldg_sqft_education             | numeric(14,1)            |           | main     |              |
+         bldg_sqft_medical_services      | numeric(14,1)            |           | main     |              |
+         bldg_sqft_transport_warehousing | numeric(14,1)            |           | main     |              |
+         bldg_sqft_wholesale             | numeric(14,1)            |           | main     |              |
+         acres_parcel_res_detsf          | numeric(14,1)            |           | main     |              |
+         acres_parcel_res_detsf_sl       | numeric(14,1)            |           | main     |              |
+         acres_parcel_res_detsf_ll       | numeric(14,1)            |           | main     |              |
+         acres_parcel_res_attsf          | numeric(14,1)            |           | main     |              |
+         acres_parcel_res_mf             | numeric(14,1)            |           | main     |              |
+         acres_parcel_emp_ret            | numeric(14,1)            |           | main     |              |
+         acres_parcel_emp_off            | numeric(14,1)            |           | main     |              |
+         acres_parcel_emp_pub            | numeric(14,1)            |           | main     |              |
+         acres_parcel_emp_ind            | numeric(14,1)            |           | main     |              |
+         acres_parcel_emp_ag             | numeric(14,1)            |           | main     |              |
+         acres_parcel_emp_military       | numeric(14,1)            |           | main     |              |
+         residential_irrigated_sqft      | numeric(14,1)            |           | main     |              |
+         commercial_irrigated_sqft       | numeric(14,1)            |           | main     |              |
+         created                         | timestamp with time zone |           | plain    |              |
+         updated                         | timestamp with time zone |           | plain    |              |
+         dev_pct                         | numeric(8,4)             |           | main     |              |
+         density_pct                     | numeric(8,4)             |           | main     |              |
+         gross_net_pct                   | numeric(8,4)             |           | main     |              |
+         dirty_flag                      | boolean                  |           | plain    |              |
+         clear_flag                      | boolean                  |           | plain    |              |
 
 ### Keep the Goal in Mind
 
