@@ -142,22 +142,44 @@ These fields are not used in the base features dataset, but are included to main
 | dirty_flag | used internally by UF during paint application |
 
 
-Parcel Area/Type
-________________
+### Parcel Area/Type
 
-.. csv-table:: **Parcel Area/Type**
-  :header: Field Name, Description
-  :widths: 25, 75
-  :file: OtherDocs/parcelareatype.csv
+| Field Name | Description |
+|------------|-------------|
+| intersection_density_sqmi | density of walkable street intersections in the geography (calculated as a weighted square mile density) |
+| acres_gross | gross/total acreage of the geography |
+| acres_parcel |  gross/total acreage of the parcel(s) |
+| sqft_parcel | parcel square footage |
+| acres_parcel_res |  residential acreage of the parcel |
+| acres_parcel_res_detsf_sl | acreage of parcel with single family small lot detached homes (<5500sf) |
+| acres_parcel_res_detsf_ll | acreage of parcel with single family large lot detached homes (>5500sf) |
+| acres_parcel_res_attsf |  acreage of parcel with single family attached homes/townhomes |
+| acres_parcel_res_mf | acreage of parcel with multifamily housing |
+| acres_parcel_emp |  acreage of parcel with employment |
+| acres_parcel_emp_off |  acreage of parcel with office employment |
+| acres_parcel_emp_ret |  acreage of parcel with retail employment |
+| acres_parcel_emp_ind |  acreage of parcel with industrial employment |
+| acres_parcel_emp_ag | acreage of parcel with agricultural employment |
+| acres_parcel_emp_mixed |  acreage of parcel with mixed employment uses |
+| acres_parcel_emp_military | acreage of parcel with military employment |
+| acres_parcel_mixed |  acreage of parcel with mixed use (residential and employment) |
+| acres_parcel_mixed_w_off |  acreage of mixed use parcels with residential and employment (includes office employment) |
+| acres_parcel_mixed_no_off | acreage of mixed use parcels with residential and employment (no office employment |
+| acres_parcel_no_use | acreage of parcel with no use |
 
+### Residential and Housing
 
-Residential and Housing
-_______________________
-
-.. csv-table:: **Residential and Housing**
-  :header: Field Name, Description
-  :widths: 25, 75
-  :file: OtherDocs/residential.csv
+| Field Name | Description |
+|------------|-------------|
+| hh | households |
+| du | dwelling units |
+| du_detsf | detached single family dwelling units |
+| du_detsf_sl | detached single family small lot dwelling units |
+| du_detsf_ll | detached single family large lot dwelling units |
+| du_attsf | attached single family dwelling units |
+| du_mf | multifamily dwelling units |
+| du_mf2to4 | units in multifamily buildings with 2 to 4 dwelling units |
+| du_mf5p | units in multifamily buildings with 5 or more dwelling units |
 
 Employment
 __________
