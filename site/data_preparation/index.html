@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Base Data Preparation - UrbanFootprint 1.5</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Base Data Preparation";
+    var mkdocs_page_input_path = "data_preparation.md";
+    var mkdocs_page_url = "/data_preparation/index.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> UrbanFootprint 1.5</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">User Guide</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../index.html">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../system_requirements/index.html">System Requirements</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">User Interface Overview</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../site_map/index.html">Site Map</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../top_section_menu_pane/index.html">1. Top Section Menu Pane</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../layer_management/index.html">2. Layer Management Window</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../map_tool_bar/index.html">3. Map View</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../scenario_editor/index.html">4. Scenario Editor</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../analysis_modules/index.html">5. Analysis Modules</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../user_manager/index.html">User Manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../arc_plugin/index.html">ArcGIS Integration</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="index.html">Base Data Preparation</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#data-preparation">Data Preparation</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#goals">Goals</a></li>
+        
+            <li><a class="toctree-l3" href="#data-needs">Data Needs</a></li>
+        
+            <li><a class="toctree-l3" href="#data-types-and-sources">Data Types and Sources</a></li>
+        
+            <li><a class="toctree-l3" href="#base-data-schema-sacog">Base Data Schema: SACOG</a></li>
+        
+            <li><a class="toctree-l3" href="#base-data-preparation-sacog">Base Data Preparation: SACOG</a></li>
+        
+            <li><a class="toctree-l3" href="#base-canvas-schema">Base Canvas Schema</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../user_support/index.html">User Support</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">UrbanFootprint 1.5</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Base Data Preparation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="data-preparation">Data Preparation</h1>
+<h2 id="goals">Goals</h2>
+<ul>
+<li>Provide an overview of data needed by UrbanFootprint</li>
+<li>Describe the required fields for base data</li>
+<li>Walk through the steps used for SACOG’s base data preparation.</li>
+<li>Work through an example of preparing data for a county.</li>
+</ul>
+<h2 id="data-needs">Data Needs</h2>
+<p>UrbanFootprint is a data intensive application. The effort that goes into data collection, preparation, and review should not be underestimated.</p>
+<h3 id="sample-data-set">Sample Data Set</h3>
+<p>A sample dataset of Elk Grove, CA is available and is included in the <a href="https://github.com/CalthorpeAnalytics/urbanfootprint/blob/master/README-developers.md">README-developers.md</a>
+and <a href="https://github.com/CalthorpeAnalytics/urbanfootprint/blob/master/README-developers-windows.md">README-developers-windows.md</a>
+instructions in the <a href="https://github.com/CalthorpeAnalytics/urbanfootprint">UrbanFootprint</a> repo.</p>
+<p>If you would like to use your own data, please see the below.</p>
+<h3 id="creating-a-new-data-set">Creating a New Data Set</h3>
+<p>The base data which is also called the base canvas, or existing conditions dataset will require extensive data collection, processing, and then review prior to its use. The requirements imposed by UrbanFootprint on its base conditions data include strict adherence to the data schema, and the need for a detailed understanding of the existing conditions at a parcel level. If you are working in a geographic area that has not had a prior installation of UrbanFootprint, it is unlikely that there will be a dataset that you can use without substantial effort in createing a base condition dataset.</p>
+<p>Scenario development has looser data requirements, but will require that you have an understanding of regional and local plans for the future, and have planned out goals for the scenario that can be translated onto a map at a parcel scale.</p>
+<p>Environmental constraint layers influence the intensity of development that is possible in locations where these constraints are present.</p>
+<p>Reference layers provide a visual reference to UrbanFootprint users while editing or visualizing scenarios.</p>
+<p>The transportation module (and any other modules that build on its results) will require that you have substantial additional data derived from both regional transportation infrastructure GIS as well as a travel demand model.</p>
+<p>Some of the other analytical modules also require climate data to run.</p>
+<h2 id="data-types-and-sources">Data Types and Sources</h2>
+<h3 id="data-for-the-base-canvas">Data for the Base Canvas</h3>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Potential Source</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cadastral/tax parcel geograpies</td>
+<td>Tax Assessor Local Jurisdiction Regional COG/MPO</td>
+<td></td>
+</tr>
+<tr>
+<td>Existing land use (parcel land use codes</td>
+<td>Tax Assessor, Local Jurisdiction, Regional COG/MPO</td>
+<td></td>
+</tr>
+<tr>
+<td>Existing employment (2 or 4 digit NAICS codes)</td>
+<td>Census LEHD, State or Regional COG/MPO</td>
+<td></td>
+</tr>
+<tr>
+<td>Dwelling Units by type (parcel scale)</td>
+<td>Tax Assessor, Local Jurisdiction, Regional COG/MPO</td>
+<td>Parcel scale dwelling unit counts are acceptable, ideally data is provided as Single Family/MultiFamily counts</td>
+</tr>
+<tr>
+<td>Population/households</td>
+<td>Census ACS 5-Year / Other (population synthesizer etc.)</td>
+<td></td>
+</tr>
+<tr>
+<td>Populating Age Characteristics/Educational Attainment/Household Income ranges/Race-Ethnicity/Vehicle Ownership</td>
+<td>Census ACS 5-Year / Other (population synthesizer etc.)</td>
+<td></td>
+</tr>
+<tr>
+<td>Parcel level Building Square Footage Data (even limited sample)</td>
+<td>Tax Assessor, Local Jurisdiction, Regional COG/MPO</td>
+<td>Used to calibrate building square footage estimates</td>
+</tr>
+<tr>
+<td>Any aggreggate geography to be used as the unit of analysis (other than parcel)</td>
+<td>Regional COG/MPO</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-for-scenario-development">Data for Scenario Development</h3>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Potential Source</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Priority Development Areas</td>
+<td>Regional COG/MPO or Local Jurisdiction</td>
+<td></td>
+</tr>
+<tr>
+<td>Redevelopment Analysis Geographies</td>
+<td>Regional COG/MPO or Local Jurisdiction</td>
+<td></td>
+</tr>
+<tr>
+<td>Planned Development (in the pipeline) locations and attributes</td>
+<td>Regional COG/MPO or Local Jurisdiction</td>
+<td></td>
+</tr>
+<tr>
+<td>Transit Priority Zones</td>
+<td>Regional COG/MPO or Local Jurisdiction</td>
+<td></td>
+</tr>
+<tr>
+<td>General Plan Parcels and attributes</td>
+<td>Regional COG/MPO or Local Jurisdiction</td>
+<td></td>
+</tr>
+<tr>
+<td>Any existing RTP/SCS scenarios - geographies and attributes</td>
+<td>Regional COG/MPO or Local Jurisdiction</td>
+<td></td>
+</tr>
+<tr>
+<td>Any other existing scenarios - geographies and attributes</td>
+<td>Regional COG/MPO or Local Jurisdiction</td>
+<td></td>
+</tr>
+<tr>
+<td>Any other geography used to inform policy on distribution of growth</td>
+<td>Regional COG/MPO or Local Jurisdiction</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="environmental-constraints">Environmental Constraints</h3>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Potential Source</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Streams/Rivers</td>
+<td>Regional COG/MPO</td>
+<td></td>
+</tr>
+<tr>
+<td>Wetlands</td>
+<td>National Wetlands Inventory</td>
+<td></td>
+</tr>
+<tr>
+<td>Vernal Pools</td>
+<td>National Wetlands Inventory</td>
+<td></td>
+</tr>
+<tr>
+<td>Priority Conservation Lands</td>
+<td>Regional COG/MPO or Local Jurisdiction</td>
+<td></td>
+</tr>
+<tr>
+<td>Slope/Digital Elevation Model (DEM)</td>
+<td>USGS or Regional COG/MPO</td>
+<td></td>
+</tr>
+<tr>
+<td>Flood Zones</td>
+<td>FEMA or Regional COG/MPO</td>
+<td></td>
+</tr>
+<tr>
+<td>Sea Level Rise Zones</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Parks/Protected lands</td>
+<td>CPAD Holdings</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="base-reference-layers">Base Reference Layers</h3>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Potential Source</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>County boundary(s)</td>
+<td>Census TIGER</td>
+<td></td>
+</tr>
+<tr>
+<td>Jurisdiction Boundaries</td>
+<td>Local Jurisdiction</td>
+<td></td>
+</tr>
+<tr>
+<td>Jurisdiction Sphere of Influence Boundaries</td>
+<td>Regional COG/MPO or Local Jurisdiction</td>
+<td></td>
+</tr>
+<tr>
+<td>Regional Sub-Area Geographies</td>
+<td>Regional COG/MPO</td>
+<td></td>
+</tr>
+<tr>
+<td>School/College/Universities</td>
+<td>Regional COG/MPO, Local Jurisdiction, or Census TIGER"</td>
+<td></td>
+</tr>
+<tr>
+<td>Health Care Facilities</td>
+<td>Regional COG/MPO, Local Jurisdiction, or Census TIGER</td>
+<td></td>
+</tr>
+<tr>
+<td>Public/Institutional parcels</td>
+<td>Tax Assessor, Local Jurisdiction, Regional COG/MPO</td>
+<td></td>
+</tr>
+<tr>
+<td>Indian Reservations/Tribal Areas</td>
+<td>Census TIGER or Regional COG/MPO</td>
+<td></td>
+</tr>
+<tr>
+<td>Military Areas</td>
+<td>Census TIGER or Regional COG/MPO</td>
+<td></td>
+</tr>
+<tr>
+<td>Open Space/Conservation Lands</td>
+<td>Regional COG/MPO or Local Jurisdiction</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="transportation-data">Transportation Data</h3>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Potential Source</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transit stops (fixed guideway and others as available)</td>
+<td>Regional COG/MPO or Transport District</td>
+<td></td>
+</tr>
+<tr>
+<td>Skim Matrices for each horzon year/policy scenario</td>
+<td>Regional MPO or Transportation Modeling Consultants</td>
+<td></td>
+</tr>
+<tr>
+<td>Transportation network</td>
+<td>Regional COG/MPO or Transport District</td>
+<td></td>
+</tr>
+<tr>
+<td>Road Network (Freeways, major roads, secondary roads)</td>
+<td>Regional COG/MPO or Transport District</td>
+<td></td>
+</tr>
+<tr>
+<td>Street Intersection Points</td>
+<td>Regional COG/MPO or Transport District</td>
+<td></td>
+</tr>
+<tr>
+<td>Railroads: light rail, commuter rail, and selected freight rail</td>
+<td>Regional COG/MPO or Transport District</td>
+<td></td>
+</tr>
+<tr>
+<td>TAZ geography(s)</td>
+<td>Regional COG/MPO or Transport District</td>
+<td></td>
+</tr>
+<tr>
+<td>Bike network (if available)</td>
+<td>Regional COG/MPO or Transport District</td>
+<td></td>
+</tr>
+<tr>
+<td>Sidewalks (if available)</td>
+<td>Regional COG/MPO or Transport District</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="analysis-reference-data">Analysis Reference Data</h3>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Potential Source</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Climate Zones (for energy modeling)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Evapotranspiration Zones (for outdoor water modeling)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="base-data-schema-sacog">Base Data Schema: SACOG</h2>
+<ul>
+<li>The structure and field names are critical.</li>
+<li>There is a single table</li>
+<li>Which will be uploaded to PostGIS</li>
+<li>
+<p>For convenience the discussion of fields will be divided into groups</p>
+</li>
+<li>
+<p>Metadata and Geography</p>
+</li>
+<li>Paint Configuration</li>
+<li>Parcel Areas/Types</li>
+<li>Residential/Housing</li>
+<li>Employment</li>
+<li>Building Square footage</li>
+<li>Outdoor Irrigated Area</li>
+</ul>
+<h3 id="metadata-and-geography">Metadata and Geography</h3>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>UF unique id</td>
+</tr>
+<tr>
+<td>geography_id</td>
+<td>original geometry id (from SACOG)</td>
+</tr>
+<tr>
+<td>wkb_geometry</td>
+<td>PostGreSQL geometry field (will not be visible in ArcGIS)</td>
+</tr>
+<tr>
+<td>region_lu_code</td>
+<td>SACOG land use code</td>
+</tr>
+<tr>
+<td>built_form_key</td>
+<td>identifier (name of) for building  type or place type key</td>
+</tr>
+<tr>
+<td>created</td>
+<td>date of data creation/import into UF system</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>date of data change or modifiction within UF system</td>
+</tr>
+</tbody>
+</table>
+<h3 id="paint-configuration">Paint Configuration</h3>
+<p>These fields are not used in the base features dataset, but are included to maintain an identical structure to the End State data.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dev_pct</td>
+<td>development percent - proportion of geography receiving building type or place type application</td>
+</tr>
+<tr>
+<td>density_pct density percent</td>
+<td>proportional intensity of building type or place type application</td>
+</tr>
+<tr>
+<td>gross_net_pct gross-to-net percent</td>
+<td>proportion of developed acreage that receives building type or place type application</td>
+</tr>
+<tr>
+<td>clear_base_flag</td>
+<td>boolean field to indicate clearance of development program (removal of all base year dwelling units and employees)</td>
+</tr>
+<tr>
+<td>redevelopment_flag</td>
+<td>boolean field to indicate/track redevelopment on geography</td>
+</tr>
+<tr>
+<td>dirty_flag</td>
+<td>used internally by UF during paint application</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parcel-areatype">Parcel Area/Type</h3>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>intersection_density_sqmi</td>
+<td>density of walkable street intersections in the geography (calculated as a weighted square mile density)</td>
+</tr>
+<tr>
+<td>acres_gross</td>
+<td>gross/total acreage of the geography</td>
+</tr>
+<tr>
+<td>acres_parcel</td>
+<td>gross/total acreage of the parcel(s)</td>
+</tr>
+<tr>
+<td>sqft_parcel</td>
+<td>parcel square footage</td>
+</tr>
+<tr>
+<td>acres_parcel_res</td>
+<td>residential acreage of the parcel</td>
+</tr>
+<tr>
+<td>acres_parcel_res_detsf_sl</td>
+<td>acreage of parcel with single family small lot detached homes (&lt;5500sf)</td>
+</tr>
+<tr>
+<td>acres_parcel_res_detsf_ll</td>
+<td>acreage of parcel with single family large lot detached homes (&gt;5500sf)</td>
+</tr>
+<tr>
+<td>acres_parcel_res_attsf</td>
+<td>acreage of parcel with single family attached homes/townhomes</td>
+</tr>
+<tr>
+<td>acres_parcel_res_mf</td>
+<td>acreage of parcel with multifamily housing</td>
+</tr>
+<tr>
+<td>acres_parcel_emp</td>
+<td>acreage of parcel with employment</td>
+</tr>
+<tr>
+<td>acres_parcel_emp_off</td>
+<td>acreage of parcel with office employment</td>
+</tr>
+<tr>
+<td>acres_parcel_emp_ret</td>
+<td>acreage of parcel with retail employment</td>
+</tr>
+<tr>
+<td>acres_parcel_emp_ind</td>
+<td>acreage of parcel with industrial employment</td>
+</tr>
+<tr>
+<td>acres_parcel_emp_ag</td>
+<td>acreage of parcel with agricultural employment</td>
+</tr>
+<tr>
+<td>acres_parcel_emp_mixed</td>
+<td>acreage of parcel with mixed employment uses</td>
+</tr>
+<tr>
+<td>acres_parcel_emp_military</td>
+<td>acreage of parcel with military employment</td>
+</tr>
+<tr>
+<td>acres_parcel_mixed</td>
+<td>acreage of parcel with mixed use (residential and employment)</td>
+</tr>
+<tr>
+<td>acres_parcel_mixed_w_off</td>
+<td>acreage of mixed use parcels with residential and employment (includes office employment)</td>
+</tr>
+<tr>
+<td>acres_parcel_mixed_no_off</td>
+<td>acreage of mixed use parcels with residential and employment (no office employment</td>
+</tr>
+<tr>
+<td>acres_parcel_no_use</td>
+<td>acreage of parcel with no use</td>
+</tr>
+</tbody>
+</table>
+<h3 id="residential-and-housing">Residential and Housing</h3>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hh</td>
+<td>households</td>
+</tr>
+<tr>
+<td>du</td>
+<td>dwelling units</td>
+</tr>
+<tr>
+<td>du_detsf</td>
+<td>detached single family dwelling units</td>
+</tr>
+<tr>
+<td>du_detsf_sl</td>
+<td>detached single family small lot dwelling units</td>
+</tr>
+<tr>
+<td>du_detsf_ll</td>
+<td>detached single family large lot dwelling units</td>
+</tr>
+<tr>
+<td>du_attsf</td>
+<td>attached single family dwelling units</td>
+</tr>
+<tr>
+<td>du_mf</td>
+<td>multifamily dwelling units</td>
+</tr>
+<tr>
+<td>du_mf2to4</td>
+<td>units in multifamily buildings with 2 to 4 dwelling units</td>
+</tr>
+<tr>
+<td>du_mf5p</td>
+<td>units in multifamily buildings with 5 or more dwelling units</td>
+</tr>
+</tbody>
+</table>
+<h3 id="employment">Employment</h3>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>emp</td>
+<td>number of employees</td>
+</tr>
+<tr>
+<td>emp_ret</td>
+<td>number of retail employees</td>
+</tr>
+<tr>
+<td>emp_retail_services</td>
+<td>number of retail services employees</td>
+</tr>
+<tr>
+<td>emp_restaurant</td>
+<td>number of restaurant employees</td>
+</tr>
+<tr>
+<td>emp_accommodation</td>
+<td>number of accommodation employees</td>
+</tr>
+<tr>
+<td>emp_arts_entertainment</td>
+<td>number of arts and entertainment employees</td>
+</tr>
+<tr>
+<td>emp_other_services</td>
+<td>number of other services employees</td>
+</tr>
+<tr>
+<td>emp_off</td>
+<td>number of office employees</td>
+</tr>
+<tr>
+<td>emp_office_services</td>
+<td>number of office services employees</td>
+</tr>
+<tr>
+<td>emp_public_admin</td>
+<td>number of public administration employees</td>
+</tr>
+<tr>
+<td>emp_education</td>
+<td>number of education employees</td>
+</tr>
+<tr>
+<td>emp_medical_services</td>
+<td>number of medical services employees</td>
+</tr>
+<tr>
+<td>emp_ind</td>
+<td>number of industrial employees</td>
+</tr>
+<tr>
+<td>emp_manufacturing</td>
+<td>number of manufacturing employees</td>
+</tr>
+<tr>
+<td>emp_wholesale</td>
+<td>number of wholesale employees</td>
+</tr>
+<tr>
+<td>emp_transport_warehousing</td>
+<td>number of transportation and warehousing employees</td>
+</tr>
+<tr>
+<td>emp_utilities</td>
+<td>number of utilities employees</td>
+</tr>
+<tr>
+<td>emp_construction</td>
+<td>number of construction employees</td>
+</tr>
+<tr>
+<td>emp_ag</td>
+<td>number of agricultural/extration employees</td>
+</tr>
+<tr>
+<td>emp_agriculture</td>
+<td>number of agricultural employees</td>
+</tr>
+<tr>
+<td>emp_extraction</td>
+<td>number of extraction employees</td>
+</tr>
+<tr>
+<td>emp_military</td>
+<td>number of military employees</td>
+</tr>
+</tbody>
+</table>
+<h3 id="building-square-footage">Building Square Footage</h3>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bldg_sqft_detsf_sl</td>
+<td>building square footage of detached single family small lot homes</td>
+</tr>
+<tr>
+<td>bldg_sqft_detsf_ll</td>
+<td>building square footage of detached single family large lot homes</td>
+</tr>
+<tr>
+<td>bldg_sqft_attsf</td>
+<td>building square footage of attached single family homes/townhomes</td>
+</tr>
+<tr>
+<td>bldg_sqft_mf</td>
+<td>building square footage of multifamily units</td>
+</tr>
+<tr>
+<td>bldg_sqft_retail_services</td>
+<td>building square footage of retail services</td>
+</tr>
+<tr>
+<td>bldg_sqft_restaurant</td>
+<td>building square footage of restaurants</td>
+</tr>
+<tr>
+<td>bldg_sqft_accommodation</td>
+<td>building square footage of accommodation</td>
+</tr>
+<tr>
+<td>bldg_sqft_arts_entertainment</td>
+<td>building square footage of arts and entertainment</td>
+</tr>
+<tr>
+<td>bldg_sqft_other_services</td>
+<td>building square footage of other services</td>
+</tr>
+<tr>
+<td>bldg_sqft_office_services</td>
+<td>building square footage of office services</td>
+</tr>
+<tr>
+<td>bldg_sqft_public_admin</td>
+<td>building square footage of public administration</td>
+</tr>
+<tr>
+<td>bldg_sqft_education</td>
+<td>building square footage of education</td>
+</tr>
+<tr>
+<td>bldg_sqft_medical_services</td>
+<td>building square footage of medical services</td>
+</tr>
+<tr>
+<td>bldg_sqft_transport_warehousing</td>
+<td>building square footage of transportation and warehousing</td>
+</tr>
+<tr>
+<td>bldg_sqft_wholesale</td>
+<td>building square footage of wholesale</td>
+</tr>
+</tbody>
+</table>
+<h3 id="outdoor-irrigated-area">Outdoor Irrigated Area</h3>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>residential_irrigated_sqft</td>
+<td>residential outdoor irrigated square feet</td>
+</tr>
+<tr>
+<td>commercial_irrigated_sqft</td>
+<td>commercial outdoor irrigated square feet</td>
+</tr>
+</tbody>
+</table>
+<h2 id="base-data-preparation-sacog">Base Data Preparation: SACOG</h2>
+<h4 id="input-data">Input Data</h4>
+<ul>
+<li>SACOG parcel data<ul>
+<li>SACOG Land Use</li>
+<li>Dwelling Units</li>
+</ul>
+</li>
+<li>SACOG TAZ<ul>
+<li>Census 2010 Blockgroups</li>
+<li>Census 2010 Tracts</li>
+</ul>
+</li>
+</ul>
+<h3 id="data-preparation-topology">Data Preparation: Topology</h3>
+<ul>
+<li>Parcels must not overlap</li>
+<li>Clip the dataset to the county border</li>
+<li>Remove roads and waterbodies</li>
+</ul>
+<h3 id="dwelling-units">Dwelling Units</h3>
+<table>
+<thead>
+<tr>
+<th>SACOG Use Code</th>
+<th>Dwelling Unit Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rural Residential</td>
+<td>Single Family</td>
+</tr>
+<tr>
+<td>Farm Home</td>
+<td>Single Family</td>
+</tr>
+<tr>
+<td>Very Low Density Res.</td>
+<td>Single Family</td>
+</tr>
+<tr>
+<td>Low Density Res.</td>
+<td>Single Family</td>
+</tr>
+<tr>
+<td>Large Lot Not Farm Home</td>
+<td>Single Family</td>
+</tr>
+<tr>
+<td>Medium Density Res.</td>
+<td>Multifamily</td>
+</tr>
+<tr>
+<td>Medium-High Density Res.</td>
+<td>Multifamily</td>
+</tr>
+<tr>
+<td>High Density Res</td>
+<td>Multifamily</td>
+</tr>
+<tr>
+<td>Urban Residential</td>
+<td>Multifamily</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Total DU = SACOG Parcel DU</li>
+<li>Controlled to TAZ totals</li>
+<li>Assign DU type using crosswalk (right), and assign DU totals to du_detsf</li>
+<li>Du_detsf_sl and du_detsf_ll based on sf/du calculation.</li>
+<li>ACS rates for Attached SF, MF 2-4, and MF 5 plus are applied to all parcels with MF units</li>
+</ul>
+<h3 id="households">Households</h3>
+<ul>
+<li>HH from SACOG 2008</li>
+<li>DU from Parcel Data</li>
+<li>Occupancy rate = HH/DU</li>
+</ul>
+<h3 id="population">Population</h3>
+<ul>
+<li>Calculate Average HH by block group from census data</li>
+<li>Ave. HH size = pop/hh</li>
+<li>Then multiply the HH count in each parcel by the Ave. HH size.</li>
+</ul>
+<h3 id="employment_1">Employment</h3>
+<ul>
+<li>Parcel employment from SACOG 2008</li>
+<li>Crosswalk using the table</li>
+<li>Use LEHD to disaggregate where needed. (next page)</li>
+<li>Accommodation extracted using SACOG Employment Inventory</li>
+</ul>
+<p><strong>Employment Land Use Crosswalk</strong></p>
+<table>
+<thead>
+<tr>
+<th>SACOG Category</th>
+<th>UrbanFootprint Employment Category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EmpGov</td>
+<td>Emp_Public_admin</td>
+</tr>
+<tr>
+<td>EmpOfc</td>
+<td>Emp_Office_services</td>
+</tr>
+<tr>
+<td>EmpMed</td>
+<td>Emp_Medical_services</td>
+</tr>
+<tr>
+<td>EmpEdu</td>
+<td>Emp_Education</td>
+</tr>
+<tr>
+<td>EmpRet</td>
+<td>Emp_Retail_services</td>
+</tr>
+<tr>
+<td>EmpFood</td>
+<td>Emp_Restaurant</td>
+</tr>
+<tr>
+<td>EmpSvc</td>
+<td>Emp_Entrec, Emp_Othe_services, Emp_Accomodation</td>
+</tr>
+<tr>
+<td>EmpInd</td>
+<td>Emp_Utilities, Emp_Transware, Emp_Warehouse, Emp_Wholesale, Emp_Construction, Emp_Manufacturing, Emp_Agriculture, Emp_Extract</td>
+</tr>
+<tr>
+<td>EmpOth</td>
+<td>Emp_military</td>
+</tr>
+</tbody>
+</table>
+<h3 id="employment-processing-and-source">Employment Processing and Source</h3>
+<p><strong>Employment Processing and Source</strong></p>
+<table>
+<thead>
+<tr>
+<th>UF Employment Sub Category</th>
+<th>Method for Spatially Deriving Field at Parcel</th>
+<th>SACSIM Category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emp_Public</td>
+<td>,Direct Crosswalk from SACSIM Category</td>
+<td>EmpGov</td>
+</tr>
+<tr>
+<td>Emp_Office</td>
+<td>Direct Crosswalk from SACSIM Category</td>
+<td>EmpOfc</td>
+</tr>
+<tr>
+<td>Emp_Medss</td>
+<td>Direct Crosswalk from SACSIM Category</td>
+<td>EmpMed</td>
+</tr>
+<tr>
+<td>Emp_Educ</td>
+<td>Direct Crosswalk from SACSIM Category</td>
+<td>EmpEdu</td>
+</tr>
+<tr>
+<td>Emp_Retail</td>
+<td>Direct Crosswalk from SACSIM Category</td>
+<td>EmpRet</td>
+</tr>
+<tr>
+<td>Emp_Restaurant</td>
+<td>Direct Crosswalk from SACSIM Category</td>
+<td>EmpFood</td>
+</tr>
+<tr>
+<td>Emp_Entrec</td>
+<td>LEHD 2010 Near Imputed Rate (Block)</td>
+<td>EmpSvc</td>
+</tr>
+<tr>
+<td>Emp_Other</td>
+<td>LEHD 2010 Near Imputed Rate (Block)</td>
+<td>EmpSvc</td>
+</tr>
+<tr>
+<td>Emp_Accommodation</td>
+<td>SACOG Employment Inventory</td>
+<td>EmpSvc</td>
+</tr>
+<tr>
+<td>Emp_Transware</td>
+<td>LEHD 2010 Near Imputed Rate (Block)</td>
+<td>EmpInd</td>
+</tr>
+<tr>
+<td>Emp_Warehouse</td>
+<td>LEHD 2010 Near Imputed Rate (Block)</td>
+<td>EmpInd</td>
+</tr>
+<tr>
+<td>Emp_Whole</td>
+<td>LEHD 2010 Near Imputed Rate (Block)</td>
+<td>EmpInd</td>
+</tr>
+<tr>
+<td>Emp_Constr</td>
+<td>LEHD 2010 Near Imputed Rate (Block)</td>
+<td>EmpInd</td>
+</tr>
+<tr>
+<td>Emp_Manuf</td>
+<td>LEHD 2010 Near Imputed Rate (Block)</td>
+<td>EmpInd</td>
+</tr>
+<tr>
+<td>Emp_Agriculture</td>
+<td>LEHD 2010 Near Imputed Rate (Block)</td>
+<td>EmpInd</td>
+</tr>
+<tr>
+<td>Emp_Extract</td>
+<td>LEHD 2010 Near Imputed Rate (Block)</td>
+<td>EmpInd</td>
+</tr>
+<tr>
+<td>Emp_AF</td>
+<td>Direct Crosswalk from SACSIM Category</td>
+<td>EmpOth</td>
+</tr>
+</tbody>
+</table>
+<h3 id="disaggregation">Disaggregation</h3>
+<ul>
+<li>This technique is used several times during data preparation.</li>
+<li>Calculate the proportion of each SACOG category that goes into each UF Employment Category.</li>
+<li>Use the LEHD 2010 near imputed rate datase as the basis for the disaggregation.</li>
+</ul>
+<pre><code>i.e. %emp_entrec = 100 * emp_entrec / (emp_entrec + emp_other_services + emp_accomodation)
+</code></pre>
+
+<p>Dataset 1 (higher accuracy): 95 employees</p>
+<p>Dataset 2: 50 retail, 30 service, and 20 industrial employees.</p>
+<table>
+<thead>
+<tr>
+<th>Total Emp</th>
+<th>Ret. %</th>
+<th>Ser. %</th>
+<th>Ind. %</th>
+<th># Ret.</th>
+<th># Ser.</th>
+<th># Ind</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>95</td>
+<td>50</td>
+<td>30</td>
+<td>20</td>
+<td>47.5</td>
+<td>28.5</td>
+<td>19</td>
+</tr>
+</tbody>
+</table>
+<h2 id="base-canvas-schema">Base Canvas Schema</h2>
+<p>Make a postgres database with a <strong>base_canvas</strong> table with the following columns (it may be easiest to start with the sample base database provided in the <a href="https://github.com/CalthorpeAnalytics/urbanfootprint/">UrbanFootprint repo</a>).</p>
+<pre><code>    psql -U postgres -c "CREATE DATABASE urbanfootprint_source;"
+    psql -U postgres urbanfootprint_source;"
+
+    urbanfootprint_source=# \d+ base_canvas
+                                           Table "public.base_canvas"
+
+                 Column              |           Type           | Modifiers | Storage  | Stats target | Description
+    ---------------------------------+--------------------------+-----------+----------+--------------+-------------
+     geography_id                    | integer                  |           | plain    |              |
+     source_id                       | character varying        |           | extended |              |
+     wkb_geometry                    | geometry                 |           | main     |              |
+     region_lu_code                  | character varying(200)   |           | extended |              |
+     built_form_key                  | character varying(200)   |           | extended |              |
+     land_development_category       | character varying(50)    |           | extended |              |
+     acres_developable               | numeric(14,4)            |           | main     |              |
+     developable_proportion          | numeric(8,4)             |           | main     |              |
+     sqft_parcel                     | numeric(14,4)            |           | main     |              |
+     acres_gross                     | numeric(14,4)            |           | main     |              |
+     acres_parcel                    | numeric(14,4)            |           | main     |              |
+     acres_parcel_res                | numeric(14,4)            |           | main     |              |
+     acres_parcel_emp                | numeric(14,4)            |           | main     |              |
+     acres_parcel_mixed_use          | numeric(14,4)            |           | main     |              |
+     acres_parcel_no_use             | numeric(14,4)            |           | main     |              |
+     intersection_density_sqmi       | numeric(14,1)            |           | main     |              |
+     pop                             | numeric(14,1)            |           | main     |              |
+     hh                              | numeric(14,1)            |           | main     |              |
+     du                              | numeric(14,1)            |           | main     |              |
+     du_detsf                        | numeric(14,1)            |           | main     |              |
+     du_attsf                        | numeric(14,1)            |           | main     |              |
+     du_mf                           | numeric(14,1)            |           | main     |              |
+     emp                             | numeric(14,1)            |           | main     |              |
+     emp_ret                         | numeric(14,1)            |           | main     |              |
+     emp_off                         | numeric(14,1)            |           | main     |              |
+     emp_pub                         | numeric(14,1)            |           | main     |              |
+     emp_ind                         | numeric(14,1)            |           | main     |              |
+     emp_ag                          | numeric(14,1)            |           | main     |              |
+     emp_military                    | numeric(14,1)            |           | main     |              |
+     du_detsf_ll                     | numeric(14,1)            |           | main     |              |
+     du_detsf_sl                     | numeric(14,1)            |           | main     |              |
+     du_mf2to4                       | numeric(14,1)            |           | main     |              |
+     du_mf5p                         | numeric(14,1)            |           | main     |              |
+     emp_retail_services             | numeric(14,1)            |           | main     |              |
+     emp_restaurant                  | numeric(14,1)            |           | main     |              |
+     emp_accommodation               | numeric(14,1)            |           | main     |              |
+     emp_arts_entertainment          | numeric(14,1)            |           | main     |              |
+     emp_other_services              | numeric(14,1)            |           | main     |              |
+     emp_office_services             | numeric(14,1)            |           | main     |              |
+     emp_public_admin                | numeric(14,1)            |           | main     |              |
+     emp_education                   | numeric(14,1)            |           | main     |              |
+     emp_medical_services            | numeric(14,1)            |           | main     |              |
+     emp_manufacturing               | numeric(14,1)            |           | main     |              |
+     emp_wholesale                   | numeric(14,1)            |           | main     |              |
+     emp_transport_warehousing       | numeric(14,1)            |           | main     |              |
+     emp_utilities                   | numeric(14,1)            |           | main     |              |
+     emp_construction                | numeric(14,1)            |           | main     |              |
+     emp_agriculture                 | numeric(14,1)            |           | main     |              |
+     emp_extraction                  | numeric(14,1)            |           | main     |              |
+     bldg_sqft_detsf_sl              | numeric(14,1)            |           | main     |              |
+     bldg_sqft_detsf_ll              | numeric(14,1)            |           | main     |              |
+     bldg_sqft_attsf                 | numeric(14,1)            |           | main     |              |
+     bldg_sqft_mf                    | numeric(14,1)            |           | main     |              |
+     bldg_sqft_retail_services       | numeric(14,1)            |           | main     |              |
+     bldg_sqft_restaurant            | numeric(14,1)            |           | main     |              |
+     bldg_sqft_accommodation         | numeric(14,1)            |           | main     |              |
+     bldg_sqft_arts_entertainment    | numeric(14,1)            |           | main     |              |
+     bldg_sqft_other_services        | numeric(14,1)            |           | main     |              |
+     bldg_sqft_office_services       | numeric(14,1)            |           | main     |              |
+     bldg_sqft_public_admin          | numeric(14,1)            |           | main     |              |
+     bldg_sqft_education             | numeric(14,1)            |           | main     |              |
+     bldg_sqft_medical_services      | numeric(14,1)            |           | main     |              |
+     bldg_sqft_transport_warehousing | numeric(14,1)            |           | main     |              |
+     bldg_sqft_wholesale             | numeric(14,1)            |           | main     |              |
+     acres_parcel_res_detsf          | numeric(14,1)            |           | main     |              |
+     acres_parcel_res_detsf_sl       | numeric(14,1)            |           | main     |              |
+     acres_parcel_res_detsf_ll       | numeric(14,1)            |           | main     |              |
+     acres_parcel_res_attsf          | numeric(14,1)            |           | main     |              |
+     acres_parcel_res_mf             | numeric(14,1)            |           | main     |              |
+     acres_parcel_emp_ret            | numeric(14,1)            |           | main     |              |
+     acres_parcel_emp_off            | numeric(14,1)            |           | main     |              |
+     acres_parcel_emp_pub            | numeric(14,1)            |           | main     |              |
+     acres_parcel_emp_ind            | numeric(14,1)            |           | main     |              |
+     acres_parcel_emp_ag             | numeric(14,1)            |           | main     |              |
+     acres_parcel_emp_military       | numeric(14,1)            |           | main     |              |
+     residential_irrigated_sqft      | numeric(14,1)            |           | main     |              |
+     commercial_irrigated_sqft       | numeric(14,1)            |           | main     |              |
+     created                         | timestamp with time zone |           | plain    |              |
+     updated                         | timestamp with time zone |           | plain    |              |
+     dev_pct                         | numeric(8,4)             |           | main     |              |
+     density_pct                     | numeric(8,4)             |           | main     |              |
+     gross_net_pct                   | numeric(8,4)             |           | main     |              |
+     dirty_flag                      | boolean                  |           | plain    |              |
+     clear_flag                      | boolean                  |           | plain    |              |
+</code></pre>
+<h3 id="keep-the-goal-in-mind">Keep the Goal in Mind</h3>
+<ul>
+<li>Data for your region will be unique</li>
+<li>This process should serve as a starting point for developing your data, not a fixed recipe.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../user_support/index.html" class="btn btn-neutral float-right" title="User Support">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../arc_plugin/index.html" class="btn btn-neutral" title="ArcGIS Integration"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© 2016 Calthorpe Analytics</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../arc_plugin/index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../user_support/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

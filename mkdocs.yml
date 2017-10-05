@@ -1,6 +1,7 @@
 site_name: UrbanFootprint 1.5
 
 theme: readthedocs
+use_directory_urls: false
 
 pages:
 - User Guide:

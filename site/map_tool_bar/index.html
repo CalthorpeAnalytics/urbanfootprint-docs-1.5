@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>3. Map View - UrbanFootprint 1.5</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "3. Map View";
+    var mkdocs_page_input_path = "map_tool_bar.md";
+    var mkdocs_page_url = "/map_tool_bar/index.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> UrbanFootprint 1.5</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">User Guide</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../index.html">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../system_requirements/index.html">System Requirements</a>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">User Interface Overview</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../site_map/index.html">Site Map</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../top_section_menu_pane/index.html">1. Top Section Menu Pane</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../layer_management/index.html">2. Layer Management Window</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="index.html">3. Map View</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#map-navigation">Map Navigation</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../scenario_editor/index.html">4. Scenario Editor</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../analysis_modules/index.html">5. Analysis Modules</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../user_manager/index.html">User Manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../arc_plugin/index.html">ArcGIS Integration</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../data_preparation/index.html">Base Data Preparation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../user_support/index.html">User Support</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">UrbanFootprint 1.5</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>User Guide &raquo;</li>
+        
+      
+        
+          <li>User Interface Overview &raquo;</li>
+        
+      
+    
+    <li>3. Map View</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="map-navigation">Map Navigation</h2>
+<p>The user has access to a wide variety of tools to interact with the main map view of UrbanFootprint.</p>
+<p><img alt="Map View" src="../images/map_view.png" /></p>
+<p>Clicking on an icon on the map tool bar allows the user to zoom and navigate around the map
+as well as select and identify map features. The user can hover their pointer to get the
+‘tool tip’ to identify what button corresponds with each selector.</p>
+<p><img alt="Toolbar" src="../images/selector_tools.png" /></p>
+<p><img alt="Zoom to Extent" src="../images/extent_selector.png" /> <em>Zoom to Project Extent</em>: This tool allows the user to
+zoom the current map to the project extent. The project refers to the project selected in
+the Active Project dropdown in the header bar.</p>
+<p><img alt="Zoom to Selection" src="../images/zoom_selected.png" /> <em>Zoom to Selection Extent</em>: This tool allows the user to
+zoom the current map to the extent of selected features of the Active Layer.</p>
+<p><img alt="Clear Selection" src="../images/cancel_select.png" /> <em>Clear Selection</em>: This tool clears the selected features
+of the Active Layer.</p>
+<p><img alt="Navigate" src="../images/hand_select.png" /> <em>Navigate</em>: This tool allows the user to navigate around the map by
+clicking and dragging on the map. <strong>Tip:</strong> The user can hold ‘Shift’ and drag to zoom to a specific extent.</p>
+<p><img alt="Identify" src="../images/info_select.png" /> <em>Identify</em>: This tool is activated when features are selected. The
+Identify tool opens a moveable summary window where the user can view the attributes of the selected feature.</p>
+<p><img alt="Point Selector" src="../images/pointer_select.png" /> <em>Point Selector</em>: The point selector selects a single
+feature on the map.</p>
+<p><img alt="Rectangle Selector" src="../images/box_select.png" /> <em>Rectangle Selector</em>: The rectangle selector selects the
+features that intersect with a rectangle formed by the user clicking and dragging across the map.</p>
+<p><img alt="Polygon Selector" src="../images/polygon_select.png" /> <em>Polygon Selector</em>: The polygon selector selects the
+features that intersects with a user-defined polygon shape formed by the user defining each
+node of the polygon by clicking on the map. Double clicking will stop forming the polygon selection.</p>
+<p><img alt="Download Selector" src="../images/download_selector.png" /> <em>Export Map</em>: The Export Map buttons takes a snapshot of
+the current map and downloads the map as a jpg to the user's default Download folder.</p>
+<blockquote>
+<p><strong>Tip:</strong> <strong><em>Multi-select</em></strong> can be activated by holding down the CTRL/CMD key (Windows/Mac)
+for the Point <img alt="Point Selector" src="../images/pointer_select.png" />, Rectangle <img alt="Rectangle Selector" src="../images/box_select.png" />,
+and Polygon <img alt="Polygon Selector" src="../images/polygon_select.png" /> Selectors.</p>
+</blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../scenario_editor/index.html" class="btn btn-neutral float-right" title="4. Scenario Editor">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../layer_management/index.html" class="btn btn-neutral" title="2. Layer Management Window"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© 2016 Calthorpe Analytics</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../layer_management/index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../scenario_editor/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

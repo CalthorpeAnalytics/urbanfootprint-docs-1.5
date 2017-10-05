@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>ArcGIS Integration - UrbanFootprint 1.5</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "ArcGIS Integration";
+    var mkdocs_page_input_path = "arc_plugin.md";
+    var mkdocs_page_url = "/arc_plugin/index.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> UrbanFootprint 1.5</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">User Guide</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../index.html">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../system_requirements/index.html">System Requirements</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">User Interface Overview</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../site_map/index.html">Site Map</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../top_section_menu_pane/index.html">1. Top Section Menu Pane</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../layer_management/index.html">2. Layer Management Window</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../map_tool_bar/index.html">3. Map View</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../scenario_editor/index.html">4. Scenario Editor</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../analysis_modules/index.html">5. Analysis Modules</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../user_manager/index.html">User Manager</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="index.html">ArcGIS Integration</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#urbanfootprint-arcmap-integration-tool">UrbanFootprint ArcMap Integration Tool</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#system-requirements-supported-version">System Requirements / Supported Version</a></li>
+        
+            <li><a class="toctree-l3" href="#download">Download</a></li>
+        
+            <li><a class="toctree-l3" href="#steps-to-download-urbanfootprint-upload-toolbox">Steps to Download UrbanFootprint Upload Toolbox</a></li>
+        
+            <li><a class="toctree-l3" href="#how-to-use-the-urbanfootprint-upload-toolbox">How to use the UrbanFootprint Upload Toolbox</a></li>
+        
+            <li><a class="toctree-l3" href="#troubleshooting">Troubleshooting</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../data_preparation/index.html">Base Data Preparation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../user_support/index.html">User Support</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">UrbanFootprint 1.5</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>ArcGIS Integration</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="urbanfootprint-arcmap-integration-tool">UrbanFootprint ArcMap Integration Tool</h1>
+<h2 id="system-requirements-supported-version">System Requirements / Supported Version</h2>
+<ul>
+<li>ArcMap 10.3</li>
+<li>ArcMap 10.4</li>
+</ul>
+<h2 id="download">Download</h2>
+<p><a href="https://s3-us-west-2.amazonaws.com/uf-provisioning/urbanfootprint-arc-toolbox-v1.0.0.zip">Arc Toolbox Version 1.0.0</a></p>
+<h2 id="steps-to-download-urbanfootprint-upload-toolbox">Steps to Download UrbanFootprint Upload Toolbox</h2>
+<ol>
+<li>Open ArcMap</li>
+<li>Navigate to the ArcToolbox section</li>
+<li>
+<p>Right click on ArcToolbox and select 'AddToolbox...'</p>
+<p><img alt="arc_toolbox_1" src="../images/arc_add_toolbox.png" /></p>
+</li>
+<li>
+<p>Navigate to the Upload toolbox and click open</p>
+<p><img alt="arc_toolbox_2" src="../images/arc_add_toolbox_2.png" /></p>
+</li>
+<li>
+<p>You should now see it at the bottom of your ArcToolbox</p>
+<p><img alt="arc_toolbox_3" src="../images/arc_add_toolbox_3.png" /></p>
+<p><img alt="arc_toolbox_4" src="../images/arc_add_toolbox_4.png" /></p>
+</li>
+</ol>
+<p><strong><em>Tip:</em></strong> If you would like the toolbox to appear every time you launch ArcMap,
+right click on the ArcToolbox again and select Save Settings &gt; To Default</p>
+<p><img alt="arc_toolbox_5" src="../images/arc_add_toolbox_5.png" /></p>
+<h2 id="how-to-use-the-urbanfootprint-upload-toolbox">How to use the UrbanFootprint Upload Toolbox</h2>
+<p>This customized python toolbox (.pyt) allows ArcMap users to upload their layers
+directly to UrbanFootprint with built-in ArcMap functionality.</p>
+<h3 id="urbanfootprint-upload-toolbox">UrbanFootprint Upload Toolbox</h3>
+<p><img alt="arc_tool" src="../images/arc_tool_1.png" /></p>
+<p>This ArcMap toolbox has 5 inputs described below:</p>
+<p><strong>Email:</strong> The email address used to login to UrbanFootprint</p>
+<p><strong>Password:</strong> The password used to login to UrbanFootprint</p>
+<p><strong>Server URL:</strong> The url of UrbanFootprint (Example: https://example.urbanfootprint.net)</p>
+<p><strong>Project Name:</strong> The name of the project in UrbanFootprint - <em>case sensitive</em> (Example: Anaheim)</p>
+<p><strong>Input Features:</strong> Drag a layer from ArcMap or browse to the layer using the <img alt="browse_files" src="../images/arc_tool_browse_files.png" /></p>
+<h3 id="upload-toolbox-instructions">Upload Toolbox Instructions</h3>
+<ol>
+<li>Enter all of the above fields and click OK</li>
+<li>After the dialog succeeds, open UrbanFootprint</li>
+<li>Your layer is now in UrbanFootprint!</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>If your layer is not in UrbanFootprint, please try the following steps:</p>
+<ol>
+<li>
+<p>Navigate to the 'Results' section in ArcMap and view the messages.</p>
+<p><img alt="arc_troubleshoot_1" src="../images/arc_tool_troubleshoot_1.png" />
+<img alt="arc_troubleshoot_2" src="../images/arc_tool_troubleshoot_2.png" /></p>
+</li>
+<li>
+<p>Look for an 'ExecuteError' in the messages.
+In this example, the Server URL is incorrect.
+<img alt="arc_troubleshoot_3" src="../images/arc_tool_troubleshoot_3.png" /></p>
+</li>
+<li>
+<p>Address the issue listed in the messages and try upload again.</p>
+</li>
+</ol>
+<p><strong><em>Hint:</em></strong> To see the error right away, try showing the 'Details'
+of your toolbox. This dialog pops up after you click OK on the
+Upload tool.
+<img alt="arc_troubleshoot_4" src="../images/arc_tool_troubleshoot_4.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../data_preparation/index.html" class="btn btn-neutral float-right" title="Base Data Preparation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../user_manager/index.html" class="btn btn-neutral" title="User Manager"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© 2016 Calthorpe Analytics</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../user_manager/index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../data_preparation/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
